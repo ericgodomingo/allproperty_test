@@ -1,0 +1,30 @@
+(1)
+In ajax/javascript: Data is of json type, so it's better to process the json object rather than putting it directly inside html.
+
+(2)
+<font> tag is already deprecated. Use styles instead.
+
+(3)
+In line $ArrayURL = split('/', $_SERVER[REQUEST_URI]));
+Change $_SERVER[REQUEST_URI] to $_SERVER['REQUEST_URI']
+
+(4)
+Function split() is already deprecated. Use explode for this line.
+
+(5)
+Error on condition; Assignment operator was used. Either change to "==" or remove the test since is_object will return a boolean.
+
+(6)
+Echo or print the output instead of returning, since we are getting a value from an ajax call.
+
+(7)
+For line $data = new dataObj();, change it to $data = new propertyData();
+
+(8)
+For baseObj.get, add fetch() to query. Such as return $this->mysql->query("SELECT $field FROM $table WHERE ID = $id")->fetch();
+
+(9)
+$swimmingPool is private to propertyData class, either change that to public/protected or add a swimmingPool member to condoData
+
+(10)
+variables of propertyData class were not useful
